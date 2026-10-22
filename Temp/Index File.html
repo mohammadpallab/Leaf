@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaf - Hyre Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fa-solid fa-leaf"></i> Leaf
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <div class="nav-buttons">
+            <button class="btn btn-secondary">Sign In</button>
+            <button class="btn btn-primary">Get Started</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="badge">New Release v2.0 🎉</span>
+            <h1>Hire top tech talent <br> <span class="highlight">effortlessly</span></h1>
+            <p>Leaf connects top companies with vetted candidates in real-time. Streamline your hiring pipeline with ease.</p>
+            
+            <div class="cta-group">
+                <button class="btn btn-primary btn-large">Start Hiring Now</button>
+                <button class="btn btn-outline btn-large"><i class="fa-solid fa-play"></i> Watch Demo</button>
+            </div>
+        </div>
+
+        <!-- Candidate Cards / Showcase -->
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar">JS</div>
+                    <div>
+                        <h3>Jane Alex</h3>
+                        <p>Senior Frontend Dev</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Tailwind</span>
+                </div>
+                <button class="btn-card" onclick="viewProfile('Jane Alex')">View Profile</button>
+            </div>
+
+            <div class="card card-featured">
+                <div class="card-header">
+                    <div class="avatar bg-purple">RA</div>
+                    <div>
+                        <h3>Rahim Ahmed</h3>
+                        <p>UI/UX Designer</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span>Figma</span>
+                    <span>Framer</span>
+                    <span>Design System</span>
+                </div>
+                <button class="btn-card" onclick="viewProfile('Rahim Ahmed')">View Profile</button>
+            </div>
+
+            <div class="card">
+                <div class="card-header">
+                    <div class="avatar bg-green">MK</div>
+                    <div>
+                        <h3>Michael Khan</h3>
+                        <p>Backend Developer</p>
+                    </div>
+                </div>
+                <div class="tags">
+                    <span>Node.js</span>
+                    <span>Python</span>
+                    <span>PostgreSQL</span>
+                </div>
+                <button class="btn-card" onclick="viewProfile('Michael Khan')">View Profile</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Leaf Inc. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
