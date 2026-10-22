@@ -1,114 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leaf - Hire top candidates for your startup</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <!-- Link CSS File -->
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>সৌন্দর্য • Simple & Beautiful</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <!-- Animated Background -->
+  <div class="bg-orbs">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="orb orb-4"></div>
+  </div>
 
-    <div class="app-frame">
-        <!-- Navigation Bar -->
-        <header class="navbar">
-            <div class="logo">
-                <div class="logo-mark">L</div>
-                <span>Leaf</span>
-            </div>
-            <nav class="nav-links">
-                <a href="#">Pricing</a>
-                <a href="#">Features</a>
-                <a href="#">Use cases ▾</a>
-            </nav>
-            <div class="nav-actions">
-                <a href="mailto:mohammad.pallab@gmail.com" class="btn-signin">mohammad.pallab@gmail.com</a>
-                <a href="#" class="btn-getstarted">Get started</a>
-            </div>
-        </header>
-
-        <!-- Hero Section -->
-        <section class="hero-section">
-            <h1 class="hero-title">Hire the <span>top</span> candidates<br>for your startup</h1>
-            <p class="hero-subtitle">Get more sales and maximize the conversion rates. Discover the most productive channels.</p>
-            <button class="btn-primary" id="hireBtn">Hire top talent</button>
-        </section>
-
-        <!-- Candidate Pill Cards -->
-        <div class="avatar-cards-wrapper">
-            <div class="ribbon-bg"></div>
-
-            <!-- Card 1 -->
-            <div class="pill-card pill-card-1">
-                <img class="pill-img" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=400" alt="Chris Pete">
-                <div class="pill-info">
-                    <h4>CHRIS PETE</h4>
-                    <p>DevOps Engineer</p>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="pill-card pill-card-2">
-                <img class="pill-img" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=400" alt="Jim Carlson">
-                <div class="pill-info">
-                    <h4>JIM CARLSON</h4>
-                    <p>Growth Marketing</p>
-                </div>
-            </div>
-
-            <!-- Card 3 (Featured - Aminul Islam Pallab) -->
-            <div class="pill-card pill-card-3">
-                <img class="pill-img" src="profile.jpg" alt="Aminul Islam Pallab">
-                <div class="pill-info">
-                    <h4>AMINUL ISLAM PALLAB</h4>
-                    <p>UI/UX Design</p>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="pill-card pill-card-4">
-                <img class="pill-img" src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=400" alt="Anna Dean">
-                <div class="pill-info">
-                    <h4>ANNA DEAN</h4>
-                    <p>Backend Engineer</p>
-                </div>
-            </div>
-
-            <!-- Card 5 -->
-            <div class="pill-card pill-card-5">
-                <img class="pill-img" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=400" alt="Mike Oneal">
-                <div class="pill-info">
-                    <h4>MIKE ONEAL</h4>
-                    <p>Product Designer</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Features Grid -->
-        <section class="features-grid">
-            <div class="feature-box">
-                <div class="feature-icon">📅</div>
-                <h3>64% Faster Hiring</h3>
-                <p>No more back and forth to find the right qualified candidates.</p>
-            </div>
-            <div class="feature-box">
-                <div class="feature-icon">📊</div>
-                <h3>Decrease spendings</h3>
-                <p>Find the right candidates and pay cheaper than the market price.</p>
-            </div>
-            <div class="feature-box">
-                <div class="feature-icon">⭐</div>
-                <h3>Top 0.1% candidates</h3>
-                <p>Find the right candidates and pay cheaper than the market price.</p>
-            </div>
-        </section>
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">সৌন্দর্য</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">সম্পর্কে</a></li>
+        <li><a href="#features">বৈশিষ্ট্য</a></li>
+        <li><a href="#contact">যোগাযোগ</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
+  </nav>
 
-    <!-- Link JS File -->
-    <script src="script.js"></script>
-</body>
-</html>
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <p class="hero-tag">✦ Simple • Beautiful • Modern</p>
+      <h1 class="hero-title">
+        সাধারণ কিন্তু<br>
+        <span class="gradient-text">অনেক সুন্দর</span>
+      </h1>
+      <p class="hero-desc">
+        একটি মিনিমাল, আধুনিক ও চোখ ধাঁধানো ওয়েবসাইট। 
+        শুধুমাত্র HTML, CSS ও JavaScript দিয়ে তৈরি।
+      </p>
+      <div class="hero-buttons">
+        <a href="#features" class="btn btn-primary">শুরু করুন</a>
+        <a href="#about" class="btn btn-ghost">আরও জানুন</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="glass-card floating">
+        <div class="card-icon">✨</div>
+        <h3>Clean Design</h3>
+        <p>প্রতিটি পিক্সেল যত্নসহকারে সাজানো</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-header">
+      <p class="section-tag">সম্পর্কে</p>
+      <h2>কেন এই ডিজাইন?</h2>
+      <p class="section-desc">সহজ, দ্রুত এবং অসাধারণ সুন্দর — এটাই আমাদের লক্ষ্য।</p>
+    </div>
+    <div class="about-grid">
+      <div class="about-card glass reveal">
+        <div class="icon-box">🎨</div>
+        <h3>মিনিমাল সৌন্দর্য</h3>
+        <p>অপ্রয়োজনীয় কিছু নেই। শুধুমাত্র প্রয়োজনীয় উপাদান দিয়ে তৈরি একটা শান্ত ও মার্জিত অভিজ্ঞতা।</p>
+      </div>
+      <div class="about-card glass reveal">
+        <div class="icon-box">⚡</div>
+        <h3>দ্রুত ও হালকা</h3>
+        <p>কোনো ভারী ফ্রেমওয়ার্ক নেই। পিওর HTML, CSS ও JS — যার ফলে লোড হয় চোখের পলকে।</p>
+      </div>
+      <div class="about-card glass reveal">
+        <div class="icon-box">📱</div>
+        <h3>সব ডিভাইসে সুন্দর</h3>
+        <p>মোবাইল, ট্যাবলেট বা ডেস্কটপ — সব জায়গায় পারফেক্ট দেখায়।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features" id="features">
+    
+... 
