@@ -1,68 +1,19 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
+document.addEventListener('DOMContentLoaded', () => {
+    // Hire button click interaction
+    const hireBtn = document.getElementById('hireBtn');
+    if (hireBtn) {
+        hireBtn.addEventListener('click', () => {
+            alert('Welcome to Hyre! We will help you find the best candidates.');
+        });
+    }
 
-body {
-    background-color: #f4f7fa;
-    color: #0f172a;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    overflow-x: hidden;
-}
-
-/* Navbar */
-.navbar {
-    width: 100%;
-    max-width: 1100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 16px 24px;
-    background: #ffffff;
-    border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-weight: 800;
-    font-size: 22px;
-}
-
-.logo-icon {
-    background: #0f172a;
-    color: #fff;
-    width: 36px;
-    height: 36px;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-menu {
-    display: flex;
-    gap: 28px;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: #475569;
-    font-size: 14px;
-    font-weight: 600;
-    transition: color 0.2s;
-}
-
-.nav-menu a:hover {
-    color: #0f172a;
-}
-
-.nav-actions {
-    
+    // Pill cards interactive alert on click
+    const pillCards = document.querySelectorAll('.pill-card');
+    pillCards.forEach(card => {
+        card.addEventListener('click', () => {
+            const name = card.querySelector('h4').innerText;
+            const role = card.querySelector('p').innerText;
+            alert(`You selected candidate: ${name} (${role})`);
+        });
+    });
+});
