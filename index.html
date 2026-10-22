@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>সোনার বাংলা • Beautiful Bangladesh</title>
+  <meta name="description" content="Discover the breathtaking beauty of Bangladesh — from the world's longest beach to the mystical Sundarbans and lush tea gardens of Sylhet.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="loader-logo">সোনার বাংলা</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="logo-mark">সোনার</span>
+        <span class="logo-text">বাংলা</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">হোম</a></li>
+        <li><a href="#about">সম্পর্কে</a></li>
+        <li><a href="#destinations">গন্তব্য</a></li>
+        <li><a href="#culture">সংস্কৃতি</a></li>
+        <li><a href="#experiences">অভিজ্ঞতা</a></li>
+        <li><a href="#gallery">গ্যালারি</a></li>
+        <li><a href="#contact" class="nav-cta">যোগাযোগ</a></li>
+      </ul>
+      <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <img src="https://images.unsplash.com/photo-1753731581991-03a92edcb279?w=1920&q=85&auto=format" alt="Cox's Bazar aerial view" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">✦ Discover the Land of Rivers</p>
+      <h1 class="hero-title">
+        <span class="line">বাংলাদেশের</span>
+        <span class="line gradient">অপূর্ব সৌন্দর্য</span>
+      </h1>
+      <p class="hero-subtitle">
+        বিশ্বের দীর্ঘতম সমুদ্র সৈকত থেকে রহস্যময় সুন্দরবন, <br>
+        সবুজ চা বাগান থেকে পাহাড়ের নীল দিগন্ত — এক অনন্য অভিজ্ঞতা।
+      </p>
+      <div class="hero-actions">
+        <a href="#destinations" class="btn btn-primary">গন্তব্যসমূহ দেখুন</a>
+        <a href="#about" class="btn btn-outline">আরও জানুন</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stats-container">
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="120">0</span>
+        <span class="stat-label">কিলোমিটার সৈকত</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="700">0</span>
+        <span class="stat-label">নদী ও খাল</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="1">0</span>
+        <span class="stat-label">বিশ্ব ঐতিহ্য সুন্দরবন</span>
+      </div>
+      <div class="stat-item reveal">
+        <span class="stat-number" data-target="166">0</span>
+        <span class="stat-label">মিলিয়ন মানুষের গল্প</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="about-grid">
+      <div class="about-content reveal">
+        <p class="section-eyebrow">সম্পর্কে বাংলাদেশ</p>
+        <h2 class="section-title">একটি দেশ,<br>হাজারো গল্প</h2>
+        <p class="about-text">
+          বাংলাদেশ শুধু একটি দেশ নয় — এটি নদী, সবুজ, ইতিহাস এবং মানুষের প্রাণের মিলনস্থল। 
+          পদ্মা, মেঘনা ও যমুনার জলে ধোয়া এই ভূমি প্রতিদিন নতুন সৌন্দর্যের জন্ম দেয়।
+        </p>
+        <p class="about-text">
+          এখানে আছে বিশ্বের বৃহত্তম ম্যানগ্রোভ বন সুন্দরবন, যেখানে রয়েল বেঙ্গল টাইগারের রাজত্ব। 
+          আছে কক্সবাজারের অন্তহীন সৈকত, সিলেটের চা বাগানের সবুজ সমুদ্র, এবং পার্বত্য চট্টগ্রামের নীল পাহাড়।
+        </p>
+        <div class="about-features">
+          <div class="af-item">
+            <span class="af-icon">🌿</span>
+            <div>
+              <strong>প্রকৃতির স্বর্গ</strong>
+              <p>বন, পাহাড়, নদী ও সমুদ্র</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <span class="af-icon">🏛️</span>
+            <div>
+              <strong>প্রাচীন ঐতিহ্য</strong>
+              <p>হাজার বছরের ইতিহাস</p>
+            </div>
+          </div>
+          <div class="af-item">
+            <span class="af-icon">🎭</span>
+            <div>
+              <strong>জীবন্ত সংস্কৃতি</strong>
+              <p>উৎসব, শিল্প ও আতিথেয়তা</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal">
+        <div class="about-img-main">
+          <img src="https://images.unsplash.com/photo-1762395150248-a3016aa974d5?w=800&q=85&auto=format" alt="Sylhet Tea Gardens">
+        </div>
+        <div class="about-img-float">
+          <img src="https://images.unsplash.com/photo-1726294174867-399e15b8b99c?w=500&q=85&auto=format" alt="Green fields of Bangladesh">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations -->
+  <section class="destinations" id="destinations">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">গন্তব্যসমূহ</p>
+      <h2 class="section-title">আবিষ্কার করুন বাংলাদেশের সেরা স্থানগুলো</h2>
+      <p class="section-desc">প্রতিটি জায়গা এক একটি অনন্য অভিজ্ঞতা বহন করে</p>
+    </div>
+
+    <div class="dest-grid">
+      <a href="coxsbazar.html" class="dest-card large reveal">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1562627076-d3f2ef96446c?w=1200&q=85&auto=format" alt="Cox's Bazar Beach">
+          <div class="dest-overlay"></div>
+        </div>
+        <div class="dest-content">
+          <span class="dest-tag">World's Longest Beach</span>
+          <h3>কক্সবাজার</h3>
+          <p>বিশ্বের দীর্ঘতম প্রাকৃতিক সমুদ্র সৈকত। সূর্যোদয় ও সূর্যাস্তের অপূর্ব দৃশ্য, নরম বালি এবং নীল সমুদ্রের সঙ্গম।</p>
+          <span class="dest-link">বিস্তারিত দেখুন →</span>
+        </div>
+      </a>
+
+      <a href="srimangal.html" class="dest-card reveal">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1762395150248-a3016aa974d5?w=800&q=85&auto=format" alt="Srimangal Tea Gardens">
+          <div class="dest-overlay"></div>
+        </div>
+        <div class="dest-content">
+          <span class="dest-tag">Tea Capital</span>
+          <h3>শ্রীমঙ্গল</h3>
+          <p>সবুজ চা বাগানের সমুদ্র। শান্তিপূর্ণ পাহাড় এবং তাজা বাতাসের দেশ।</p>
+          <span class="dest-link">বিস্তারিত দেখুন →</span>
+        </div>
+      </a>
+
+      <a href="sundarbans.html" class="dest-card reveal">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1726294174867-399e15b8b99c?w=800&q=85&auto=format" alt="Riverine Bangladesh">
+          <div class="dest-overlay"></div>
+        </div>
+        <div class="dest-content">
+          <span class="dest-tag">UNESCO Heritage</span>
+          <h3>সুন্দরবন</h3>
+          <p>বিশ্বের বৃহত্তম ম্যানগ্রোভ বন এবং রয়েল বেঙ্গল টাইগারের আবাসস্থল।</p>
+          <span class="dest-link">বিস্তারিত দেখুন →</span>
+        </div>
+      </a>
+
+      <a href="bandarban.html" class="dest-card reveal">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1753731581991-03a92edcb279?w=800&q=85&auto=format" alt="Coastal Beauty">
+          <div class="dest-overlay"></div>
+        </div>
+        <div class="dest-content">
+          <span class="dest-tag">Hill Tracts</span>
+          <h3>বান্দরবান</h3>
+          <p>নীল পাহাড়, ঝরনা এবং আদিবাসী সংস্কৃতির অনন্য মিশ্রণ।</p>
+          <span class="dest-link">বিস্তারিত দেখুন →</span>
+        </div>
+      </a>
+
+      <a href="sylhet.html" class="dest-card reveal">
+        <div class="dest-img">
+          <img src="https://images.unsplash.com/photo-1755921739099-1e7a1131aa3d?w=800&q=85&auto=format" alt="Sunset over Bay of Bengal">
+          <div class="dest-overlay"></div>
+        </div>
+        <div class="dest-content">
+          <span class="dest-tag">Sacred City</span>
+          <h3>সিলেট</h3>
+          <p>আধ্যাত্মিক শান্তি, চা বাগান এবং ঝরনার শহর।</p>
+          <span class="dest-link">বিস্তারিত দেখুন →</span>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Culture -->
+  <section class="culture" id="culture">
+    <div class="culture-inner">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">সংস্কৃতি ও ঐতিহ্য</p>
+        <h2 class="section-title">জীবন্ত বাংলা সংস্কৃতি</h2>
+      </div>
+      <div class="culture-grid">
+        <div class="culture-card reveal">
+          <div class="culture-num">০১</div>
+          <h3>পহেলা বৈশাখ</h3>
+          <p>বাংলা নববর্ষের উৎসব। রঙিন পোশাক, মঙ্গল শোভাযাত্রা এবং আনন্দে ভরা এক দিন।</p>
+        </div>
+        <div class="culture-card reveal">
+          <div class="culture-num">০২</div>
+          <h3>রিকশা আর্ট</h3>
+          <p>ঢাকার রাস্তার চলমান শিল্পকর্ম। প্রতিটি রিকশা এক একটি ক্যানভাস।</p>
+        </div>
+        <div class="culture-card reveal">
+          <div class="culture-num">০৩</div>
+          <h3>বাংলা সাহিত্য</h3>
+          <p>রবীন্দ্রনাথ থেকে জসীমউদ্দীন — কবিতা ও গানে ভরা এক সমৃদ্ধ ঐতিহ্য।</p>
+        </div>
+        <div class="culture-card reveal">
+          <div class="culture-num">০৪</div>
+          <h3>ঐতিহ্যবাহী খাবার</h3>
+          <p>ইলিশ, বিরিয়ানি, পিঠা-পুলি এবং মিষ্টির অনন্য স্বাদ।</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experiences -->
+  <section class="experiences" id="experiences">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">অভিজ্ঞতা</p>
+      <h2 class="section-title">যা আপনি অনুভব করবেন</h2>
+    </div>
+    <div class="exp-grid">
+      <div class="exp-card reveal">
+        <div class="exp-icon">🌅</div>
+        <h3>সূর্যোদয় কক্সবাজারে</h3>
+        <p>বিশ্বের দীর্ঘতম সৈকতে সূর্যের প্রথম আলো দেখার অভিজ্ঞতা অবিস্মরণীয়।</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-icon">🐅</div>
+        <h3>সুন্দরবন সাফারি</h3>
+        <p>নৌকায় চড়ে ম্যানগ্রোভ বনের ভেতর দিয়ে যাওয়া এবং বন্যপ্রাণী দেখা।</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-icon">🍵</div>
+        <h3>চা বাগানে হাঁটা</h3>
+        <p>সবুজ সমুদ্রের মাঝে হাঁটা এবং তাজা চা পাতার ঘ্রাণ নেওয়া।</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-icon">⛰️</div>
+        <h3>পাহাড়ে ট্রেকিং</h3>
+        <p>বান্দরবান ও খাগড়াছড়ির পাহাড়ে উঠে মেঘের সঙ্গে হাঁটা।</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-icon">🚤</div>
+        <h3>নদীতে ভ্রমণ</h3>
+        <p>পদ্মা ও মেঘনার বুকে নৌকায় চড়ে বাংলার প্রাণ অনুভব করা।</p>
+      </div>
+      <div class="exp-card reveal">
+        <div class="exp-icon">🎨</div>
+        <h3>গ্রামীণ জীবন</h3>
+        <p>গ্রামের মানুষের আতিথেয়তা এবং সাধারণ জীবনের সৌন্দর্য।</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery" id="gallery">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">গ্যালারি</p>
+      <h2 class="section-title">বাংলাদেশের মুহূর্তগুলো</h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="gal-item large reveal">
+        <img src="https://images.unsplash.com/photo-1753731581991-03a92edcb279?w=1000&q=85&auto=format" alt="Cox's Bazar">
+        <div class="gal-caption">কক্সবাজার • Inani Beach</div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1762395150248-a3016aa974d5?w=600&q=85&auto=format" alt="Tea Garden">
+        <div class="gal-caption">শ্রীমঙ্গল • চা বাগান</div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1726294174867-399e15b8b99c?w=600&q=85&auto=format" alt="Green Fields">
+        <div class="gal-caption">সবুজ মাঠ • নদীমাতৃক</div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1755921739099-1e7a1131aa3d?w=600&q=85&auto=format" alt="Sunset">
+        <div class="gal-caption">সূর্যাস্ত • বঙ্গোপসাগর</div>
+      </div>
+      <div class="gal-item reveal">
+        <img src="https://images.unsplash.com/photo-1676694365179-eeeddc0cc13b?w=600&q=85&auto=format" alt="Beach Sunset">
+        <div class="gal-caption">সন্ধ্যা • কক্সবাজার</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div class="cta-content reveal">
+      <h2>আপনার যাত্রা শুরু করুন</h2>
+      <p>বাংলাদেশের অপূর্ব সৌন্দর্য নিজের চোখে দেখতে প্রস্তুত?</p>
+      <a href="#contact" class="btn btn-primary btn-lg">যোগাযোগ করুন</a>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="contact-wrapper">
+      <div class="contact-info reveal">
+        <p class="section-eyebrow">যোগাযোগ</p>
+        <h2 class="section-title">আমাদের সাথে কথা বলুন</h2>
+        <p>ভ্রমণ পরিকল্পনা, তথ্য বা যেকোনো প্রশ্নের জন্য আমাদের জানান।</p>
+        <div class="contact-details">
+          <div class="cd-item">
+            <span>📍</span>
+            <div>
+              <strong>অবস্থান</strong>
+              <p>ঢাকা, বাংলাদেশ</p>
+            </div>
+          </div>
+          <div class="cd-item">
+            <span>✉️</span>
+            <div>
+              <strong>ইমেইল</strong>
+              <p>hello@sonarbangla.com</p>
+            </div>
+          </div>
+          <div class="cd-item">
+            <span>📞</span>
+            <div>
+              <strong>ফোন</strong>
+              <p>+880 1700-000000</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <form class="contact-form glass reveal" id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>নাম</label>
+            <input type="text" placeholder="আপনার নাম" required>
+          </div>
+          <div class="form-group">
+            <label>ইমেইল</label>
+            <input type="email" placeholder="email@example.com" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>বিষয়</label>
+          <input type="text" placeholder="ভ্রমণ পরিকল্পনা / তথ্য" required>
+        </div>
+        <div class="form-group">
+          <label>বার্তা</label>
+          <textarea rows="5" placeholder="আপনার বার্তা লিখুন..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">পাঠান</button>
+        <div class="form-success" id="formSuccess">ধন্যবাদ! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব ✨</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          <span class="logo-mark">সোনার</span>
+          <span class="logo-text">বাংলা</span>
+        </a>
+        <p>বাংলাদেশের সৌন্দর্য ও ঐতিহ্যকে বিশ্বের সামনে তুলে ধরা।</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <h4>এক্সপ্লোর</h4>
+          <a href="#destinations">গন্তব্য</a>
+          <a href="#culture">সংস্কৃতি</a>
+          <a href="#gallery">গ্যালারি</a>
+        </div>
+        <div>
+          <h4>কোম্পানি</h4>
+          <a href="#about">সম্পর্কে</a>
+          <a href="#contact">যোগাযোগ</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© ২০২৬ সোনার বাংলা • Crafted with love for Bangladesh</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
