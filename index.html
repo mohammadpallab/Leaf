@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pallab • C++ Developer</title>
+  <meta name="description" content="Pallab — Premium C++ Developer Portfolio. Systems, Algorithms & High-Performance Code.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#home" class="logo">
+        <span class="logo-bracket">&lt;</span>Pallab<span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="https://github.com" target="_blank" class="nav-github">GitHub ↗</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal">
+        <span class="dot"></span> Available for opportunities
+      </div>
+      <h1 class="hero-title">
+        <span class="reveal-text">Hi, I'm</span>
+        <span class="name reveal-text">Pallab</span>
+      </h1>
+      <p class="hero-role reveal">
+        <span class="typed-prefix">C++ Developer</span>
+        <span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-desc reveal">
+        Crafting high-performance systems, elegant algorithms,<br>
+        and clean code that scales. Building the future in C++.
+      </p>
+      <div class="hero-cta reveal">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="50">0</span>+
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="5">0</span>+
+          <span class="stat-label">Years Exp</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="10">0</span>k+
+          <span class="stat-label">Lines of C++</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-code reveal">
+      <div class="code-window">
+        <div class="code-header">
+          <span class="dot red"></span>
+          <span class="dot yellow"></span>
+          <span class="dot green"></span>
+          <span class="code-title">main.cpp</span>
+        </div>
+        <pre class="code-body"><code><span class="kw">#include</span> <span class="str">&lt;iostream&gt;</span>
+<span class="kw">#include</span> <span class="str">&lt;vector&gt;</span>
+<span class="kw">#include</span> <span class="str">&lt;algorithm&gt;</span>
+
+<span class="kw">int</span> <span class="fn">main</span>() {
+    std::vector&lt;<span class="kw">int</span>&gt; skills = {
+        <span class="num">100</span>, <span class="cm">// C++</span>
+        <span class="num">95</span>,  <span class="cm">// Algorithms</span>
+        <span class="num">90</span>,  <span class="cm">// Systems</span>
+        <span class="num">88</span>   <span class="cm">// Performance</span>
+    };
+    
+    std::sort(skills.rbegin(), skills.rend());
+    
+    std::cout &lt;&lt; <span class="str">"Pallab is ready."</span> 
+              &lt;&lt; std::endl;
+    <span class="kw">return</span> <span class="num">0</span>;
+}</code></pre>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label reveal">About</div>
+      <h2 class="section-title reveal">Building systems that<br><span class="gradient">actually perform</span></h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a C++ developer passionate about low-level systems, 
+            high-performance computing, and writing code that is both 
+            elegant and blazing fast.
+          </p>
+          <p>
+            From competitive programming to production systems — 
+            I love solving hard problems with clean, efficient solutions. 
+            My focus spans algorithms, memory management, concurrency, 
+            and modern C++ (C++17/20/23).
+          </p>
+          <div class="about-tags">
+            <span>Systems Programming</span>
+            <span>Competitive Programming</span>
+            <span>Open Source</span>
+            <span>Performance Tuning</span>
+          </div>
+        </div>
+        <div class="about-cards">
+          <div class="mini-card reveal">
+            <div class="mini-icon">⚡</div>
+            <h3>Performance First</h3>
+            <p>Every cycle counts. Profiling, optimizing, and measuring.</p>
+          </div>
+          <div class="mini-card reveal">
+            <div class="mini-icon">🧩</div>
+            <h3>Clean Architecture</h3>
+            <p>Readable, maintainable, and scalable C++ codebases.</p>
+          </div>
+          <div class="mini-card reveal">
+            <div class="mini-icon">🚀</div>
+            <h3>Modern C++</h3>
+            <p>C++20/23 features, ranges, concepts, and coroutines.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills" id="skills">
+    <div class="container">
+      <div class="section-label reveal">Skills</div>
+      <h2 class="section-title reveal">Technical Arsenal</h2>
+      <div class="skills-grid">
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-name">C++</span>
+            <span class="skill-pct">95%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="95"></div></div>
+          <p>Modern C++17/20/23, STL, templates, RAII, move semantics</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-name">Algorithms & DS</span>
+            <span class="skill-pct">92%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="92"></div></div>
+          <p>Graph, DP, trees, competitive programming, complexity analysis</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-name">Systems</span>
+            <span class="skill-pct">88%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="88"></div></div>
+          <p>Linux, memory management, concurrency, networking</p>
+        </div>
+        <div class="skill-card reveal">
+          <div class="skill-header">
+            <span class="skill-name">Tools</span>
+            <span class="skill-pct">90%</span>
+          </div>
+          <div class="skill-bar"><div class="skill-fill" data-width="90"></div></div>
+          <p>Git, CMake, GDB, Valgrind, Clang, Docker</p>
+        </div>
+      </div>
+      <div class="tech-pills reveal">
+        <span>C++20</span><span>CMake</span><span>STL</span><span>Boost</span>
+        <span>OpenMP</span><span>CUDA</span><span>Linux</span><span>Git</span>
+        <span>Python</span><span>SQL</span><span>Docker</span><span>CI/CD</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects" id="projects">
+    <div class="container">
+      <div class="section-label reveal">Projects</div>
+      <h2 class="section-title reveal">Selected Work</h2>
+      <div class="projects-grid">
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-lang">C++</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⌘</a>
+              <a href="#" title="Live">↗</a>
+            </div>
+          </div>
+          <h3>High-Performance Cache</h3>
+          <p>Lock-free LRU cache with custom memory allocator. Sub-microsecond latency under high concurrency.</p>
+          <div class="project-tags">
+            <span>C++20</span><span>Concurrency</span><span>Memory</span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-lang">C++</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⌘</a>
+            </div>
+          </div>
+          <h3>Graph Algorithm Library</h3>
+          <p>Header-only library implementing Dijkstra, A*, max-flow, and strongly connected components.</p>
+          <div class="project-tags">
+            <span>Algorithms</span><span>Header-only</span><span>Templates</span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-lang">C++</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⌘</a>
+              <a href="#" title="Live">↗</a>
+            </div>
+          </div>
+          <h3>Mini Compiler</h3>
+          <p>A small C-like language compiler with lexer, parser, AST, and LLVM IR generation.</p>
+          <div class="project-tags">
+            <span>Compilers</span><span>LLVM</span><span>Parsing</span>
+          </div>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-top">
+            <span class="project-lang">C++</span>
+            <div class="project-links">
+              <a href="#" title="GitHub">⌘</a>
+            </div>
+          </div>
+          <h3>Async Network Engine</h3>
+          <p>Event-driven TCP server using epoll/io_uring. Handles 100k+ concurrent connections.</p>
+          <div class="project-tags">
+            <span>Networking</span><span>Async</span><span>Linux</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-box reveal">
+        <div class="section-label">Contact</div>
+        <h2 class="section-title">Let's build something<br><span class="gradient">extraordinary</span></h2>
+        <p class="contact-desc">Open to freelance, full-time roles, and open-source collaboration.</p>
+        <div class="contact-actions">
+          <a href="mailto:pallab@example.com" class="btn btn-primary">Send Email</a>
+          <a href="https://github.com" target="_blank" class="btn btn-ghost">GitHub Profile</a>
+        </div>
+        <div class="socials">
+          <a href="#" class="social">GitHub</a>
+          <a href="#" class="social">LinkedIn</a>
+          <a href="#" class="social">Twitter</a>
+          <a href="#" class="social">Codeforces</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & built by <strong>Pallab</strong> • Pure HTML, CSS & JS</p>
+      <p class="footer-note">Ready for GitHub Pages 🚀</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
